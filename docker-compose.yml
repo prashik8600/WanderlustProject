@@ -10,7 +10,8 @@ services:
 
   backend:
     container_name: backend
-    build: ./backend
+    # build: ./backend
+    image: backendwanderlust:latest
     env_file:
       - ./backend/.env.docker
     ports:
@@ -20,7 +21,8 @@ services:
 
   frontend:
     container_name: frontend
-    build: ./frontend
+    # build: ./frontend
+    image: frontendwanderlust:latest
     env_file:
       - ./frontend/.env.docker
     ports:
