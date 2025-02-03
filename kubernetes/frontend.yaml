@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: frontendwanderlust:latest
+          image: prashw23/frontendwanderlust:latest
           ports:
             - containerPort: 5173
 ---
